@@ -1,0 +1,19 @@
+<div class="grid-container"> 
+  <mat-grid-list cols="3" rowHeight="620px">
+    <mat-grid-tile *ngFor="let m of movies" >
+      <div class="card black darken-1">
+        <div class="card-content white-text card-box-content">
+         <img src="/assets/Movie/{{m.movieID}}.jpg#"  alt="{{m.movieName}}">
+        </div>
+         <div class="card-action">
+           <span class="movie-rating"><i class="material-icons dp48 ">star</i><h5>  
+            {{m.releaseDate | date}}</h5></span>
+          <h4><a href="">{{m.movieName}}</a></h4>
+          <button mat-raised-button color="primary" [routerLink]="['/movie-detail',m.movieID]" routerLinkActive="router-link-active">Detail</button>
+        </div>
+      </div>
+      <br>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+

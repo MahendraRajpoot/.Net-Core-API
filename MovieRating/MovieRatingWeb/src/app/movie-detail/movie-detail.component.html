@@ -1,0 +1,56 @@
+    <div class="container">
+      <div class="row">
+        <div class="title-name">
+     
+    </div>
+    </div>
+    <div class="movie-detail-box">
+       <div class="row">
+          <div class="col l3 m6 s12">
+            <div class="movie-poster">
+            <img src="/assets/Movie/{{movieID}}.jpg">
+          </div>
+          </div>
+          <div class="col l4 m6 s12">
+            <div class="movie-detail" >
+              <h5>{{movieName}}</h5>
+            
+               <div class="add-rating-box grey darken-2">
+                <div class="add-your-review">
+                  <p><b>Add your rating & review</b></p>
+                    <p>Your ratings matters</p> 
+                    <p>
+                      <rating-star setRating ="avarageRating" max = 5 (onRating) = onRating($event)></rating-star>
+                    </p> 
+                </div>
+              
+               </div>
+               <div>
+               
+               </div>
+               <!-- <span>
+                <i [attr.style]="ratingColor" class="material-icons dp48" (click)="onRateClick($event, 1)" (mouseover)="onRateHover($event, 1)">star</i> 
+                <i class="material-icons dp48" (click)="onRateClick($event, 2)" (mouseover)="onRateHover($event, 2)">star</i> 
+                <i class="material-icons dp48" (click)="onRateClick($event, 3)" (mouseover)="onRateHover($event, 3)">star</i> 
+                <i class="material-icons dp48" (click)="onRateClick($event, 4)" (mouseover)="onRateHover($event, 4)">star</i> 
+                <i class="material-icons dp48" (click)="onRateClick($event, 5)" (mouseover)="onRateHover($event, 5)">star</i> 
+               </span> -->
+               <div class="movie-other-description">
+                <ul>                  
+                  <li> {{releaseDate | date}}</li>
+                </ul>
+                <h5>About the movie</h5>
+               <p>{{description}}<p>
+                 
+               </div>
+            </div>
+          </div>
+           <div class="col l5 m6 s12">
+            <!-- Promo Content 3 goes here -->
+          </div>
+    
+        </div> 
+        </div> 
+     </div>
+
+     

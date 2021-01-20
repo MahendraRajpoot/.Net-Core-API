@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MovieRating.Common\MovieRating.Common.csproj" />
+    <ProjectReference Include="..\MovieRating.DTO\MovieRating.DTO.csproj" />
+  </ItemGroup>
+
+</Project>

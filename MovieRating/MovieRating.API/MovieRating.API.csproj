@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MovieRating.BAL\MovieRating.BAL.csproj" />
+    <ProjectReference Include="..\MovieRating.Common\MovieRating.Common.csproj" />
+    <ProjectReference Include="..\MovieRating.DTO\MovieRating.DTO.csproj" />
+  </ItemGroup>
+
+</Project>
